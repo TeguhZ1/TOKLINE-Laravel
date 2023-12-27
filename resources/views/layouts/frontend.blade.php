@@ -7,7 +7,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta content="TOKLINE Toko Online Dengan Sensasi Belanja Ala Mall" name="description">
+        <meta content="TOKLINE Toko Online Dengan Pengalaman Belanja Ala Mall" name="description">
         <meta content="{{ $title ?? 'App Toko' }}" name="keywords">
         <meta property="og:locale" content="ID_id"/>
         <meta property="og:type" content="website"/>
@@ -94,7 +94,7 @@
             <div class="container text-center">
                 TOKLINE &copy; <?= date('Y');?>
                 <br>
-                Toko Online Dengan Sensasi Belanja Ala Mall.
+                Toko Online Dengan Pengalaman Belanja Ala Mall.
             </div>
         </div>
         <!-- end footer -->
