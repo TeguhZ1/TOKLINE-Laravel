@@ -6,11 +6,11 @@
             <div class="col-sm-4">
                 <div class="card card-rounded">
                     <div class="card-header bg-primary text-white">
-                        <h5 class="card-title pt-2"> 
+                        <h5 class="card-title pt-2">
                             @if(!empty($request->get('id')))
                                 <i class="fas fa-edit me-1"></i>
-                            @else 
-                                <i class="fas fa-plus me-1"></i> 
+                            @else
+                                <i class="fas fa-plus me-1"></i>
                             @endif
                             Kategori
                         </h5>
@@ -18,25 +18,25 @@
                     <div class="card-body">
                         @if(!empty($request->get('id')))
                             <form method="post" action="{{ route('admin.update_kategori') }}">
-                        @else 
-                            <form method="post" action="{{ route('admin.create_kategori') }}">  
+                        @else
+                            <form method="post" action="{{ route('admin.create_kategori') }}">
                         @endif
                             @csrf
                             <div class="form-group">
                                 <label for="">Nama Kategori</label>
                                 @if(!empty($request->get('id')))
-                                    <input type="text" 
-                                        class="form-control mt-2 @error("nama_kategori") is-invalid @enderror" 
-                                        value="{{$edit->nama_kategori}}" 
+                                    <input type="text"
+                                        class="form-control mt-2 @error("nama_kategori") is-invalid @enderror"
+                                        value="{{$edit->nama_kategori}}"
                                         name="nama_kategori" id="nama_kategori" placeholder="">
                                     @error("nama_kategori")
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                     <input type="hidden" value="{{ $request->get('id') }}" name="id">
-                                @else 
-                                    <input type="text" 
-                                        class="form-control mt-2 @error("nama_kategori") is-invalid @enderror" 
-                                        value="{{old("nama_kategori")}}" name="nama_kategori" 
+                                @else
+                                    <input type="text"
+                                        class="form-control mt-2 @error("nama_kategori") is-invalid @enderror"
+                                        value="{{old("nama_kategori")}}" name="nama_kategori"
                                         id="nama_kategori" placeholder="">
                                     @error("nama_kategori")
                                         <span class="text-danger">{{ $message }}</span>
@@ -63,25 +63,25 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama Kategori</th>
-                                        <th>Aksi</th>
+                                        <th>Edit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @php $no =1;@endphp
                                     @forelse($kategori as $r)
                                         <tr>
-                                            <td>{{$no}}</td>      
-                                            <td>{{$r->nama_kategori}}</td> 
+                                            <td>{{$no}}</td>
+                                            <td>{{$r->nama_kategori}}</td>
                                             <td>
-                                                <a href="{{url("admin/kategori?id=$r->id")}}" 
+                                                <a href="{{url("admin/kategori?id=$r->id")}}"
                                                     class="btn btn-success btn-sm" title="Edit">
-                                                    <i class="fa fa-edit"></i>  
-                                                </a>   
-                                                <a href="{{url("admin/kategori/delete/$r->id")}}" 
-                                                    class="btn btn-danger btn-sm" 
-                                                    onclick="javascript:return confirm(`Data ingin dihapus ?`);" 
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a href="{{url("admin/kategori/delete/$r->id")}}"
+                                                    class="btn btn-danger btn-sm"
+                                                    onclick="javascript:return confirm(`Data ingin dihapus ?`);"
                                                     title="Delete">
-                                                    <i class="fa fa-times"></i> 
+                                                    <i class="fa fa-times"></i>
                                                 </a>
                                             </td>
                                         </tr>

@@ -35,7 +35,7 @@
                             <div class="col-sm-4"><b></b></div>
                             <div class="col-sm-8">
                                 <a class="btn btn-success btn-md"
-                                    href="https://api.whatsapp.com/send/?phone={{ $profil_toko->phone }}&text=Halo,+Saya+Ingin+Membeli+Produk+Ini" target="_blank" role="button">
+                                    href="https://api.whatsapp.com/send/?phone={{ $profil_toko->phone }}&text=Hai,+Saya+Ingin+Membeli+Produk+Ini" target="_blank" role="button">
                                     <i class="fab fa-whatsapp"></i> Order Sekarang
                                 </a>
                             </div>

@@ -44,7 +44,7 @@
                                 Setiap item yang kami tawarkan telah dipilih dengan hati-hati untuk mencerminkan kualitas, style, dan harga yang terbaik.
                                 Komitmen kami terhadap pelanggan tidak hanya berhenti pada produk yang luar biasa.
                                 Kami juga berusaha memberikan pelayanan yang sempurna, mulai dari pengalaman berbelanja yang mudah hingga layanan pelanggan yang responsif dan informatif.
-                                Ayo gabung dalam komunitas Tokline dan mulai belanja sekarang!</p>
+                                Ayo gabung dalam komunitas TOKLINE dan mulai belanja sekarang!</p>
                         </div>
                     </div>
                 </div>
